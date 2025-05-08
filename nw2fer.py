@@ -1,3 +1,11 @@
+
+# projeto de banco para incrementar dentro de um site web
+# futuramente pretento colocar o tkinter para testes
+# o codigo ainda não está pronto
+# esse modelo/projeto, é meu trabalho pessoal que fiz por diversão
+# coloquei varios comentarios para que não fique perido durante a leitura do codigo
+
+
 import os
 from tabulate import tabulate
 from colorama import Fore, init
