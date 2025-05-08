@@ -1,8 +1,9 @@
 
-# projeto de banco para incrementar dentro de um site web
-# futuramente pretento colocar o tkinter para testes
+# esse é o modelo completo do "new1cmr.py"
 # o codigo ainda não está pronto
 # esse modelo/projeto, é meu trabalho pessoal que fiz por diversão
+# projeto de banco para incrementar dentro de um site web
+# futuramente pretento colocar o tkinter e deixar mais "bonito"
 # coloquei varios comentarios para que não fique perido durante a leitura do codigo
 
 
