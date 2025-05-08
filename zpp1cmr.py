@@ -1,3 +1,9 @@
+
+##Gustavo Eidi, Vitoria A, Maria Eduarda
+##"Site de farmacia" 
+##
+##app de compras calculos
+
 import os
 from tabulate import tabulate
 import re
@@ -32,25 +38,25 @@ def cadastro_cliente():
     email = input("Email: ")
 
     while True:
-        nome = input("Nome (apenas letras e espaços): ")
+        nome = input("Nome: ")
         if validar_nome(nome):
             break
         print("Nome inválido. Use apenas letras e espaços: .")
 
     while True:
-        cpf = input("CPF (11 dígitos): ")
+        cpf = input("CPF: ")
         if validar_cpf(cpf):
             break
         print("CPF inválido.")
 
     while True:
-        cep = input("CEP (formato 000000-000): ")
+        cep = input("CEP: ")
         if validar_cep(cep):
             break
         print("CEP inválido.")
 
     while True:
-        nasc = input("Data de nascimento (dd/mm/aaaa): ")
+        nasc = input("Data de nascimento: ")
         try:
             idade = calcular_idade(nasc)
             break
@@ -115,7 +121,7 @@ def menu_principal():
 
     while True:
         limpar_tela()
-        print("O que deseja ver? (Atendimento)")
+        print(f"{Fore.BLUE}O que deseja ver? (Atendimento){Style.RESET_ALL}")
         tabela_opcoes = [[chave, nome] for chave, (nome, _) in catalogos.items()]
         print(tabulate(tabela_opcoes, headers=["Sessão", "Descrição"], tablefmt="fancy_grid"))
 
@@ -248,8 +254,8 @@ def resumo_compra(cliente, carrinho, total, forma_pagamento, parcelas):
 def main():
     limpar_tela()
     cadastro = None
-
-    resp = input("Deseja efetuar um cadastro? (s/n): ")
+    print(f"\nAperte {Fore.YELLOW}S{Style.RESET_ALL} para efetuar o cadastro ou {Fore.YELLOW}N{Style.RESET_ALL} para continuar sem")
+    resp = input("Deseja efetuar um cadastro? ")
     if resp.lower() == 's':
         cadastro = cadastro_cliente()
 
@@ -262,5 +268,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-##Gustavo Eidi, Vitoria A, Maria Eduarda
