@@ -1,8 +1,9 @@
 
-##Gustavo Eidi, Vitoria A, Maria Eduarda
-##"Site de farmacia" 
-##
-##app de compras calculos
+# Trabalho da faculdade
+# Gustavo Eidi, Vitoria A, Maria Eduarda
+# "Site de farmacia" 
+# 
+# app de compras calculos
 
 import os
 from tabulate import tabulate
