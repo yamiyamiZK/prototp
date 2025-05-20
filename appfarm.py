@@ -217,7 +217,7 @@ def resumo_compra(cliente, carrinho, total, forma_pagamento, parcelas):
     desconto = 0
     if cliente:
         desconto = 0.05
-        if cliente['idade'] < 55:
+        if cliente['idade'] > 55:
             desconto = 0.15
 
     valor_final = total * (1 - desconto)
