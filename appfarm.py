@@ -10,6 +10,9 @@ from tabulate import tabulate
 import re
 from datetime import datetime
 from colorama import init, Fore, Style
+#import aiosqlite
+
+#nome arquivo aiosqlite = farme_app.db
 
 init(autoreset=True)
 
@@ -108,6 +111,7 @@ def adicionar_ao_carrinho(lista, carrinho, total):
 
     return carrinho, total
 
+### colocara isso no txt ###
 def menu_principal():
     catalogos = {
         '1': ('Medicamentos', [["Paracetamol", 10], ["Ibuprofeno", 15]]),
@@ -217,6 +221,7 @@ def resumo_compra(cliente, carrinho, total, forma_pagamento, parcelas):
     desconto = 0
     if cliente:
         desconto = 0.05
+
         if cliente['idade'] > 55:
             desconto = 0.15
 
