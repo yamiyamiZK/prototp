@@ -45,19 +45,19 @@ def cadastro_cliente():
         nome = input("Nome: ")
         if validar_nome(nome):
             break
-        print("Nome inválido. Use apenas letras e espaços: .")
+        print(f"{Fore.RED}Nome inválido. Use apenas letras e espaços: .{Style.RESET_ALL}")
 
     while True:
         cpf = input("CPF: ")
         if validar_cpf(cpf):
             break
-        print("CPF inválido.")
+        print(f"{Fore.RED}CPF inválido.{Style.RESET_ALL}")
 
     while True:
         cep = input("CEP: ")
         if validar_cep(cep):
             break
-        print("CEP inválido.")
+        print(f"{Fore.RED}CEP inválido.{Style.RESET_ALL}")
 
     while True:
         nasc = input("Data de nascimento: ")
@@ -65,7 +65,7 @@ def cadastro_cliente():
             idade = calcular_idade(nasc)
             break
         except:
-            print("Data inválida.")
+            print(f"{Fore.RED}Data inválida.{Style.RESET_ALL}")
 
     limpar_tela()
     print("Cadastro finalizado com sucesso!")
