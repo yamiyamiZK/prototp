@@ -1,0 +1,23 @@
+[Medicamentos]
+Paracetamol;10.00
+Ibuprofeno;15.00
+
+[Cuidados pessoais]
+Shampoo;20.00
+Condicionador;25.00
+
+[Produtos naturais]
+Whey;129.00
+Vitamina C;35.00
+
+[Estoque infantil]
+Shampoo Infantil;18.00
+Condicionador Infantil;20.00
+Papinha Maçã;8.00
+Papinha Banana;9.00
+Fralda P;40.00
+Fralda M;45.00
+
+[Consultas]
+Teste Viral;100.00
+Colocação de Brincos;80.00
