@@ -1,6 +1,6 @@
 
 # Trabalho da faculdade
-# Gustavo Eidi, Vitoria A, Maria Eduarda
+# Nomes:
 # "Site de farmacia" 
 # 
 # app de compras calculos
